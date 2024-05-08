@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../Landing%20Page/style/LandingPage.css">
+    <link rel="stylesheet" href="../Landing%20Page/style/footer.css">
+    <style>
+        .logo-insat {
+            max-height: 40px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="../index.php">
+                <img src="../Landing%20Page/src/logo-insat.png" alt="logo insat" class="logo-insat">
+                INSAT <b>platform</b>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.php">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.php">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.php#fieldsOfStudy">Fields of Study</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.php#contact-form-section">Contact us</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-btn nav-btn-login" onclick="window.location.href = '../form/form.php';">Log in</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-btn">Get Started</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div class="container mt-5">
+    <h2 class="text-center" style="color: #B30000;">Registration Form</h2> <!-- Centered title with red color -->
+    <form action="submit_request.php" method="post">
+        
+        <!-- Personal Information -->
+        <div class="form-group">
+            <label for="firstName">First Name:</label>
+            <input type="text" class="form-control" id="firstName" name="firstName" required>
+        </div>
+
+        <div class="form-group">
+            <label for="lastName">Last Name:</label>
+            <input type="text" class="form-control" id="lastName" name="lastName" required>
+        </div>
+
+        <!-- Date of Birth -->
+        <div class="form-group">
+            <label for="birthDate">Date of Birth:</label>
+            <input type="date" class="form-control" id="birthDate" name="birthDate" required>
+        </div>
+
+        <!-- Gender -->
+        <div class="form-group">
+            <label for="gender">Gender:</label>
+            <select class="form-control" id="gender" name="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+        </div>
+
+        <!-- Nationality -->
+        <div class="form-group">
+            <label for="nationality">Nationality:</label>
+            <input type="text" class="form-control" id="nationality" name="nationality" required>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" class="form-control" id="phone" name="phone" required>
+        </div>
+
+        <!-- Address -->
+        <div class="form-group">
+            <label for="address">Address:</label>
+            <textarea class="form-control" id="address" name="address" rows="4" required></textarea>
+        </div>
+
+        <!-- Previous Education -->
+        <div class="form-group">
+            <label for="education">Previous Education:</label>
+            <input type="text" class="form-control" id="education" name="education" required>
+        </div>
+
+        <!-- Intended Program of Study -->
+        <div class="form-group">
+            <label for="program">Intended Program of Study:</label>
+            <select class="form-control" id="program" name="program" required>
+                <option value="mpi">MPI</option>
+                <option value="cba">CBA</option>
+            </select>
+        </div>
+
+        <!-- Achievements and Awards -->
+        <div class="form-group">
+            <label for="achievements">Achievements and Awards:</label>
+            <textarea class="form-control" id="achievements" name="achievements" rows="4"></textarea>
+        </div>
+
+        <!-- Personal Statement -->
+        <div class="form-group">
+            <label for="essay">Personal Statement:</label>
+            <textarea class="form-control" id="essay" name="essay" rows="6" required></textarea>
+        </div>
+
+        <!-- Declaration Checkbox -->
+        <div class="form-group form-check">
+            <input class="form-check-input" type="checkbox" id="declaration" name="declaration" required>
+            <label class="form-check-label" for="declaration">I hereby declare that the information provided is accurate and complete to the best of my knowledge.</label>
+        </div>
+        
+        <!-- Submit Button -->
+        <button type="submit" class="btn btn-danger" >Submit</button>
+
+    </form>
+</div>
+
+<!-- Footer -->
+<footer class="site-footer" id="about-us">
+    <div class="container">
+        <div class="row">
+            <div class="About-text">
+                <h6>About</h6>
+                <p class="text-justify">Welcome to INSAT, the National Institute of Applied Sciences and Technology, where excellence meets innovation. Established in 1996, INSAT is dedicated to providing world-class engineering education, fostering cutting-edge research, and nurturing future leaders in various engineering disciplines.</p>
+            </div>
+
+            <div>
+                <h6>Quick Links</h6>
+                <ul class="footer-links">
+                    <li><a href="#landing-page">About Us</a></li>
+                    <li><a href="contact_us/contact_us.html">Contact Us</a></li>
+                    <li><a href="">Contribute</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div>
+                <p class="copyright-text">Copyright &copy; 2024 All Rights Reserved by <a href="#">insat</a>.</p>
+            </div>
+
+            <div>
+                <ul class="social-icons">
+                    <li><a class="facebook" href="https://www.facebook.com/insat.rnu.tn"><i class="fa fa-facebook"></i></a></li>
+                    <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
+                    <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

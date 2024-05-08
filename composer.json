@@ -1,0 +1,18 @@
+{
+    "name": "user/school-management-system",
+    "autoload": {
+        "psr-4": {
+            "User\\SchoolManagementSystem\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "ajammoussi",
+            "email": "jam.ahmed55@gmail.com"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "^6.9",
+        "vlucas/phpdotenv": "^5.6"
+    }
+}
